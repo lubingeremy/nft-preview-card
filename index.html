@@ -142,7 +142,6 @@
         }
         #name:hover{
             color: var(--cyan);
-            cursor: pointer;
             transition: 0.2s;
         }
         footer{
@@ -163,6 +162,13 @@
         }
         a{
             text-decoration: none;
+            cursor: pointer;
+        }
+        #personal{
+            color: white;
+            text-decoration: underline;
+        }
+        #fementor{
             color: white;
             text-decoration: underline;
         }
@@ -190,8 +196,16 @@
         </div>
         <div id="profile">
             <img id="avatar" src="/images/image-avatar.png" alt="">
-            <p>Creation of <span id="name">Jules Wyvern</span></p>
+            <p>Creation of <a id="name">Jules Wyvern</a></p>
         </div>
     </main>
+    <footer>
+        <h4>
+            Par <a id="personal" href="#" target="_blank">Lubin Gérémy</a>
+        </h4>
+        <h5>
+            Basé sur un challenge de <a id="fementor" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Frontend Mentor</a>
+        </h5>
+    </footer>
 </body>
 </html>
