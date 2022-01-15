@@ -9,203 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        :root{
-            --vdbMain: hsl(217, 54%, 11%);
-            --vdbCb: hsl(216, 50%, 16%);
-            --vdbL: hsl(215, 32%, 27%);
-            --white: hsl(0, 0%, 100%);
-            --sb: hsl(215, 51%, 70%);
-            --cyan: hsl(178, 100%, 50%);
-            --transi: 0.5s;
-        }
-        body{
-            background-color: var(--vdbMain);
-            display: grid;
-            grid-template-columns: auto 350px auto;
-            grid-template-rows: 5vh auto 1fr;
-            font-family: 'Outfit', sans-serif;
-        }
-        main{
-            height: 535px;
-            width: 330px;
-            background-color: var(--vdbCb);
-            grid-column: 2/3;
-            grid-row: 2/3;
-            border-radius: 15px;
-        }
-        #image{
-            padding: 20px;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
-            transition: 0.2s;
-        }
-        #equil{
-            width: 100%;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        #image:hover::after{
-            color: rgb(112, 37, 37);
-            opacity: 1;
-            transition: var(--transi);
-        }
-        #image::after{
-            content: url(/images/icon-view.svg);
-            position: absolute;
-            transform: translateX(-350%) translateY(240%);
-            opacity: 0;
-            cursor: pointer;
-            transition: 0.2s;
-
-        }
-        #description{
-            padding: 0 20px;
-        }
-        #description::after{
-            content: "";
-            display: inline-block;
-            width: 290px;
-            height: 1px;
-            opacity: 0.5;
-            background-color: var(--sb);
-        }
-        h1{
-            font-size: 20px;
-            color: var(--white);
-            margin-bottom: 15px;
-            transition: 0.2s;
-        }
-        h1:hover{
-            color: var(--cyan);
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        h2{
-            font-size: 15px;
-            display: inline;
-            color: var(--cyan);
-        }
-        h3{
-            font-size: 15px;
-            font-weight: 400;
-            display: inline;
-            display: inline;
-            color: var(--sb);
-        }
-        p{
-            font-size: 17px;
-            font-weight: 300;
-            color: var(--sb);
-            margin-bottom: 15px;
-        }
-        #caracteristics{
-            height: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #icon-eth{
-            position: relative;
-            top: 2.5px;
-            margin-right: 3px;
-        }
-        #icon-clock{
-            position: relative;
-            top: 2.5px;
-            margin-left: 3px;
-        }
-        #profile{
-            display: inline;
-            padding: 20px;
-        }
-        #avatar{
-            height: 33px;
-            border-radius: 20px;
-            border: 1px solid white;
-            position: relative;
-            top: 12px;         
-            margin-right: 10px;   
-        }
-        #profile p{
-            display: inline;
-        }
-        #name{
-            color: var(--white);
-            transition: 0.2s;
-
-        }
-        #name:hover{
-            color: var(--cyan);
-            transition: 0.2s;
-        }
-        footer{
-            grid-column: 2/3;
-            grid-row: 3/4;
-            text-align: center;
-            margin-top: 20px;
-            font-family: 'Montserrat', sans-serif;
-            color: white;
-        }
-        h4{
-            font-weight: 300;
-            margin-bottom: 5px;
-        }
-        h5{
-            font-weight: 100;
-            font-size: 10px;
-        }
-        a{
-            text-decoration: none;
-            cursor: pointer;
-        }
-        #personal{
-            color: white;
-            text-decoration: underline;
-        }
-        #fementor{
-            color: white;
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div id="image">
-            <img id="equil" src="/images/image-equilibrium.jpg" alt="">
+            <img id="equil" src="/images/image-equilibrium.jpg" alt="preview">
         </div>
         <div id="description">
-            <h1>Equilibrium #3429</h1>
+            <a href="/">Equilibrium #3429</a>
             <p>Our Equilibrium collection promotes balance and calm.</p>
             <div id="caracteristics">
                 <div id="eth">
-                    <img id="icon-eth" src="/images/icon-ethereum.svg" alt="">
-                    <h2>0.041 ETH</h2>
+                    <img id="icon-eth" src="/images/icon-ethereum.svg" alt="Ethereum icon">
+                    <p>0.041 ETH</p>
                 </div>
                 
                 <div id="time">
-                    <img id="icon-clock" src="/images/icon-clock.svg" alt="">
-                    <h3>3 days left</h3>
+                    <img id="icon-clock" src="/images/icon-clock.svg" alt="Clock icon">
+                    <p>3 days left</p>
                 </div>
             </div>
         </div>
         <div id="profile">
-            <img id="avatar" src="/images/image-avatar.png" alt="">
-            <p>Creation of <a id="name">Jules Wyvern</a></p>
+            <img id="avatar" src="/images/image-avatar.png" alt="Jules Wyvern">
+            <p>Creation of <a id="name" href="/">Jules Wyvern</a></p>
         </div>
     </main>
     <footer>
-        <h4>
-            Par <a id="personal" href="#" target="_blank">Lubin Gérémy</a>
-        </h4>
-        <h5>
-            Basé sur un challenge de <a id="fementor" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Frontend Mentor</a>
-        </h5>
+        <a id="personal" href="https://github.com/lubingeremy" target="_blank">
+            Par Lubin Gérémy
+        </a>
+        <a id="fementor" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">
+            Challenge de Frontend Mentor
+        </a>
     </footer>
 </body>
 </html>

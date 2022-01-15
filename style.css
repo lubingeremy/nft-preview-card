@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+}
+:root{
+    --vdbMain: hsl(217, 54%, 11%);
+    --vdbCb: hsl(216, 50%, 16%);
+    --vdbL: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --sb: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --transi: 0.5s;
+}
+body{
+    background-color: var(--vdbMain);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+main{
+    height: 535px;
+    width: 330px;
+    background-color: var(--vdbCb);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 15px;
+}
+#image{
+    padding: 20px;
+    transition: 0.2s;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+*:focus-visible{
+    border: 2px solid black;
+}
+#equil{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#image:hover::after, #image:active::after{
+    color: rgb(112, 37, 37);
+    opacity: 1;
+    transition: var(--transi);
+}
+#image::after{
+    content: url("/images/icon-view.svg");
+    position: absolute;
+
+    transform: translateX(-350%) translateY(240%);
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#description{
+    padding: 0 20px;
+}
+#description::after{
+    content: "";
+    display: inline-block;
+    width: 290px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: var(--sb);
+}
+#description a{
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+#description a:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.2s;
+}
+#eth p{
+    font-size: 0.8rem;
+    display: inline;
+    color: var(--cyan);
+}
+#time p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline;
+    display: inline;
+    color: var(--sb);
+}
+p{
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--sb);
+    margin-bottom: 15px;
+}
+#caracteristics{
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icon-eth{
+    position: relative;
+    top: 2.5px;
+    margin-right: 3px;
+}
+#icon-clock{
+    position: relative;
+    top: 2.5px;
+    margin-left: 3px;
+}
+#profile{
+    display: inline;
+    padding: 20px;
+}
+#avatar{
+    height: 33px;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    top: 12px;         
+    margin-right: 10px;   
+}
+#profile p{
+    display: inline;
+}
+#name{
+    color: var(--white);
+    transition: 0.2s;
+
+}
+#name:hover{
+    color: var(--cyan);
+    transition: 0.2s;
+}
+footer{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+footer a{
+    font-weight: 300;
+    display: block;
+}
+footer a:nth-child(1){
+    margin-bottom: 5px;
+}
+footer a:nth-child(2){
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+#personal{
+    color: white;
+    text-decoration: underline;
+}
+#fementor{
+    color: white;
+    text-decoration: underline;
+}
