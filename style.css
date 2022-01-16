@@ -31,8 +31,6 @@ main{
     height: 535px;
     width: 330px;
     background-color: var(--vdbCb);
-    grid-column: 2/3;
-    grid-row: 2/3;
     border-radius: 15px;
 }
 #image{
@@ -43,7 +41,7 @@ main{
     overflow: hidden;
 }
 *:focus-visible{
-    border: 2px solid black;
+    border: 2px dotted rgb(255, 0, 0);
 }
 #equil{
     width: 100%;
@@ -58,7 +56,6 @@ main{
 #image::after{
     content: url("/images/icon-view.svg");
     position: absolute;
-
     transform: translateX(-350%) translateY(240%);
     opacity: 0;
     cursor: pointer;
@@ -70,7 +67,7 @@ main{
 #description::after{
     content: "";
     display: inline-block;
-    width: 290px;
+    width: 100%;
     height: 1px;
     opacity: 0.5;
     background-color: var(--sb);
@@ -95,10 +92,9 @@ main{
     font-size: 0.8rem;
     font-weight: 400;
     display: inline;
-    display: inline;
     color: var(--sb);
 }
-p{
+main p{
     font-size: 0.85rem;
     font-weight: 300;
     color: var(--sb);
@@ -108,7 +104,6 @@ p{
     height: 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 #icon-eth{
     position: relative;
@@ -138,37 +133,20 @@ p{
 #name{
     color: var(--white);
     transition: 0.2s;
-
 }
 #name:hover{
     color: var(--cyan);
     transition: 0.2s;
 }
 footer{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    text-align: center;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     color: white;
-
 }
 footer a{
     font-weight: 300;
-    display: block;
-}
-footer a:nth-child(1){
-    margin-bottom: 5px;
-}
-footer a:nth-child(2){
-    font-weight: 100;
-    font-size: 0.5rem;
-}
-#personal{
-    color: white;
     text-decoration: underline;
 }
-#fementor{
-    color: white;
-    text-decoration: underline;
+footer p{
+    color: var(--sb);
 }
