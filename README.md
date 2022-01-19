@@ -1,2 +1,2 @@
-# nft-preview-card
- Incrustation of an NFT preview card. Based on a FrontendMentor challenge
+# NFT Card Preview
+ Integration of an NFT preview card. Based on a challenge by Frontend Mentor
